@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12</title>
+<meta name="description" content="LAst.MInute.REvision.AI: NCERT chapter lists for Class 10 to 12, an AI doubt solver, practice quizzes, video lessons and focus sounds. Free to use.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12">
+<meta property="og:description" content="Chapter lists, AI doubt solver, quizzes, video lessons and focus sounds for CBSE students.">
+<meta name="theme-color" content="#0d5f80">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f7;--card:#fff;--ink:#14213d;--mute:#5b6778;--line:#d3dbe6;--hi:#ffd23f;--acc:#0f766e;--bad:#b42318;--good:#067647;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--card:#18223a;--ink:#eef2f7;--mute:#9fb0c6;--line:#2c3b58;--acc:#4fd1c5;--good:#4ade80;--bad:#f87171}}
+:root[data-theme="dark"]{--bg:#0f1624;--card:#18223a;--ink:#eef2f7;--mute:#9fb0c6;--line:#2c3b58;--acc:#4fd1c5;--good:#4ade80;--bad:#f87171}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:transparent;color:var(--ink);font:16px/1.55 "Bricolage Grotesque",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:2rem;font-weight:800;margin:0 0 4px;letter-spacing:-.02em}
+h1 mark{background:var(--hi);color:#14213d;padding:0 .2em;border-radius:3px}
+.sub{color:var(--mute);margin:0 0 18px}
+.ctx{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+select,button,textarea{font:inherit;color:var(--ink)}
+select{background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0}
+nav{display:flex;gap:4px;border-bottom:2px solid var(--line);margin-bottom:18px;overflow-x:auto}
+nav button{background:none;border:0;padding:10px 14px;font-weight:600;color:var(--mute);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+nav button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--hi)}
+button:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.chap{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;cursor:pointer;background:var(--card);border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+.chap[aria-pressed=true]{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}
+.tag{font-size:.8rem;color:var(--mute);white-space:nowrap}
+.tag.done{color:var(--good);font-weight:600}
+.btn{background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer}
+.btn.alt{background:var(--hi);color:#14213d}
+.btn:disabled{opacity:.5;cursor:default}
+textarea{width:100%;min-height:90px;background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:10px;resize:vertical}
+.ans{white-space:pre-wrap;margin-top:12px}
+.opt{display:block;width:100%;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:9px 12px;margin:6px 0;cursor:pointer}
+.opt.ok{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--card))}
+.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 14%,var(--card))}
+.why{color:var(--mute);font-size:.92rem;margin-top:6px}
+.note{color:var(--mute);font-size:.9rem}
+.err{color:var(--bad)}
+ul.road{padding-left:1.1rem;margin:6px 0}
+h2{font-size:1.15rem;margin:18px 0 6px}
+@media(prefers-reduced-motion:no-preference){.opt{transition:background .15s,border-color .15s}}
+
+html{background:#0d5f80}
+:root{--k1:#8fd3f4;--k2:#e6f7ff;--a1:#2aa7c9;--a2:#0d5f80;--d1:#f3dfb0;--d2:#e3c78a}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--k1:#0b1b3a;--k2:#27406b;--a1:#145a7a;--a2:#06263d;--d1:#7a6a4a;--d2:#5a4c34}}
+:root[data-theme="dark"]{--k1:#0b1b3a;--k2:#27406b;--a1:#145a7a;--a2:#06263d;--d1:#7a6a4a;--d2:#5a4c34}
+.sea{position:fixed;inset:0;z-index:-1;overflow:hidden}
+.sky{position:absolute;inset:0 0 48% 0;background:linear-gradient(var(--k1),var(--k2))}
+.water{position:absolute;inset:52% 0 0 0;background:linear-gradient(var(--a1),var(--a2))}
+.sand{position:absolute;left:0;right:0;bottom:0;height:15%;background:linear-gradient(var(--d1),var(--d2))}
+.w{position:absolute;left:0;width:200%;height:90px;animation:wv linear infinite}
+.w svg{display:block;width:100%;height:100%}
+.w1{bottom:15%;animation-duration:16s;opacity:.4}.w1 path{fill:#fff}
+.w2{bottom:12%;animation-duration:10s;opacity:.55}.w2 path{fill:var(--a1)}
+.w3{bottom:8%;animation-duration:7s;opacity:.9}.w3 path{fill:#f4fbff}
+@keyframes wv{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.w{animation:none}}
+.wrap{background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:16px;margin:12px auto}
+.scr{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:20px;min-height:260px;text-align:center}
+.scr .em{font-size:3rem}.scr h3{margin:4px 0 8px;font-size:1.3rem}
+.scr ul{list-style:none;padding:0;margin:0 0 10px}
+.scr li{opacity:0;animation:fi .6s forwards;margin:4px 0;font-weight:600}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.cap{color:var(--mute);font-size:.95rem}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:10px 0}.bar i{display:block;height:100%;background:var(--acc);border-radius:3px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+.snd{flex:1 1 140px;text-align:center;padding:14px 8px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);cursor:pointer;font-weight:600}
+.snd[aria-pressed=true]{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 16%,var(--card))}
+.brand{overflow-wrap:anywhere}.brand small{font-size:.36em;text-transform:lowercase;font-weight:600;letter-spacing:.02em}
+
+.vid{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;color:#fff;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.scn{position:absolute;inset:0;animation:cut .7s}
+@keyframes cut{from{opacity:0;transform:scale(1.03)}to{opacity:1;transform:none}}
+.bgfx{position:absolute;inset:0;overflow:hidden}
+.bgfx b{position:absolute;left:-10%;top:-20%;width:55%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.14);filter:blur(30px);animation:dr 12s ease-in-out infinite alternate}
+.bgfx b:nth-child(2){left:auto;top:auto;right:-10%;bottom:-20%;animation-duration:16s}
+@keyframes dr{to{transform:translate(12%,10%) scale(1.15)}}
+.art{position:absolute;right:6%;top:8%;width:34%;text-align:center}
+.art .em{font-size:clamp(3.5rem,13vw,6.5rem);animation:fl 5s ease-in-out infinite alternate;filter:drop-shadow(0 8px 14px rgba(0,0,0,.4))}
+@keyframes fl{to{transform:translateY(-10px) rotate(3deg)}}
+.pres{position:absolute;right:5%;bottom:20%;text-align:center;font-size:.7rem}
+.face{width:52px;height:52px;border-radius:50%;background:#ffd9a8;position:relative;margin:0 auto 2px;box-shadow:0 3px 8px rgba(0,0,0,.4)}
+.face i{position:absolute;top:19px;width:6px;height:6px;border-radius:50%;background:#222;animation:bl 4s infinite}
+.face i:nth-child(1){left:14px}.face i:nth-child(2){right:14px}
+.face u{position:absolute;left:18px;bottom:10px;width:16px;height:4px;border-radius:4px;background:#8a2d2d}
+.talk .face u{animation:mt .28s ease-in-out infinite alternate}
+@keyframes mt{to{height:11px;bottom:8px}}
+@keyframes bl{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+.lower{position:absolute;left:3%;top:7%;width:56%;background:rgba(0,0,0,.45);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);border-left:4px solid var(--hi);border-radius:8px;padding:8px 12px}
+.lower h3{margin:0 0 4px;font-size:clamp(1rem,3.4vw,1.35rem)}
+.lower ul{list-style:none;margin:0;padding:0;font-size:clamp(.78rem,2.4vw,.95rem)}
+.lower li{opacity:0;animation:fi .6s forwards;margin:2px 0}
+.info{position:absolute;left:3%;bottom:20%;width:66%}
+.flow{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:clamp(.7rem,2.2vw,.85rem)}
+.flow span{opacity:0;animation:fi .6s forwards;background:rgba(255,255,255,.2);border-radius:6px;padding:3px 8px}
+.flow em{opacity:.7;font-style:normal}
+.rem{opacity:0;animation:fi .6s 3.2s forwards;margin-top:6px;background:var(--hi);color:#14213d;border-radius:6px;padding:4px 8px;font-weight:600;font-size:clamp(.72rem,2.2vw,.88rem)}
+.sub{position:absolute;left:4%;right:4%;bottom:3%;text-align:center;background:rgba(0,0,0,.55);border-radius:6px;padding:4px 8px;font-size:clamp(.72rem,2.4vw,.95rem);line-height:1.35;max-height:16%;overflow:hidden}
+.sub span{opacity:.55}.sub span.on{opacity:1;color:#ffe27a}
+.nocc .sub{display:none}
+.chk{position:absolute;inset:0;background:rgba(10,20,40,.9);padding:14px;overflow:auto;z-index:2}.chk:empty{display:none}
+.segs{display:flex;gap:3px;margin:8px 0}
+.seg{flex:1;height:8px;background:var(--line);border:0;border-radius:4px;overflow:hidden;cursor:pointer;padding:0}
+.seg i{display:block;height:100%;width:0;background:var(--hi)}
+@media(max-width:560px){.vid{aspect-ratio:3/4}.lower{width:94%}.art{top:38%;right:4%;width:38%}.info{width:56%;bottom:20%}.pres{bottom:19%}}
+@media(prefers-reduced-motion:reduce){.vid *{animation:none!important}.lower li,.flow span,.rem{opacity:1!important}.scn{animation:none}}
+</style>
+</head>
+<body>
+<div class="sea" aria-hidden="true"><div class="sky"></div><div class="water"></div>
+<div class="w w1"><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path d="M0 45 Q150 5 300 45 T600 45 T900 45 T1200 45 V90 H0Z"/></svg></div>
+<div class="w w2"><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path d="M0 40 Q150 80 300 40 T600 40 T900 40 T1200 40 V90 H0Z"/></svg></div>
+<div class="sand"></div>
+<div class="w w3"><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><path d="M0 50 Q150 15 300 50 T600 50 T900 50 T1200 50 V90 H0Z"/></svg></div></div>
+<div class="wrap">
+<h1 aria-label="Last Minute Revision AI" class="brand"><mark>LA</mark><small>st</small>.<mark>MI</mark><small>nute</small>.<mark>RE</mark><small>vision</small>.<mark>AI</mark></h1>
+<p class="sub">NCERT chapters, doubts and practice for Class 10 to 12, in one place. Free to use.</p>
+<div class="row"><button class="btn alt" id="shr">Share LAst.MInute.REvision.AI</button><a class="btn" id="wa" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block">Send on WhatsApp</a><span class="note" id="shm" aria-live="polite"></span></div>
+
+<div class="ctx">
+<select id="cls" aria-label="Class"></select>
+<select id="subj" aria-label="Subject"></select>
+</div>
+
+<nav role="tablist" id="tabs">
+<button role="tab" data-t="study" aria-selected="true">Study</button>
+<button role="tab" data-t="lesson" aria-selected="false">Video lesson</button>
+<button role="tab" data-t="ask" aria-selected="false">Ask a doubt</button>
+<button role="tab" data-t="quiz" aria-selected="false">Practice</button>
+<button role="tab" data-t="sound" aria-selected="false">Focus sounds</button>
+<button role="tab" data-t="plan" aria-selected="false">Roadmap</button>
+</nav>
+
+<section id="study"></section>
+<section id="lesson" hidden></section>
+<section id="ask" hidden></section>
+<section id="quiz" hidden></section>
+<section id="sound" hidden></section>
+<section id="plan" hidden></section>
+<footer class="note" style="margin-top:28px;padding-top:12px;border-top:1px solid var(--line);text-align:center">&copy; 2026 Janipati Dhanu Abishai. All rights reserved.<br>LAst.MInute.REvision.AI concept and design by Janipati Dhanu Abishai.</footer>
+</div>
+
+<script>
+const SUBJ={10:["Maths","Science","SST: Contemporary India II","SST: Democratic Politics II","SST: Understanding Economic Development","SST: India and the Contemporary World II","English: First Flight","English: Footprints without Feet"],11:["Physics","Chemistry","Maths","Biology"],12:["Physics","Chemistry","Maths","Biology"]};
+// Sample chapter lists only. Verify against the current NCERT syllabus before launch.
+const CH={"10|SST: Contemporary India II":["Resources and Development","Water Resources","Agriculture","Minerals and Energy Resources","Manufacturing Industries","Lifelines of National Economy"],
+"10|SST: Democratic Politics II":["Power Sharing","Federalism","Gender, Religion and Caste","Political Parties","Outcomes of Democracy"],
+"10|SST: Understanding Economic Development":["Development","Sectors of the Indian Economy","Money and Credit","Globalisation and the Indian Economy"],
+"10|SST: India and the Contemporary World II":["The Rise of Nationalism in Europe","Nationalism in India","The Making of a Global World","The Age of Industrialisation","Print Culture and the Modern World"],
+"10|English: First Flight":["A Letter to God","Nelson Mandela: Long Walk to Freedom","Two Stories About Flying","From the Diary of Anne Frank","Glimpses of India","Mijbil the Otter","Madam Rides the Bus","The Sermon at Benares","The Proposal","Poem: Dust of Snow","Poem: Fire and Ice","Poem: A Tiger in the Zoo","Poem: The Ball Poem"],
+"10|English: Footprints without Feet":["A Triumph of Surgery","The Thief's Story","The Midnight Visitor","A Question of Trust","Footprints without Feet","The Making of a Scientist","The Necklace","Bholi","The Book That Saved the Earth"],
+"10|Maths":["Real Numbers","Polynomials","Pair of Linear Equations in Two Variables","Quadratic Equations","Arithmetic Progressions","Triangles","Coordinate Geometry","Introduction to Trigonometry","Some Applications of Trigonometry","Circles","Areas Related to Circles","Surface Areas and Volumes","Statistics","Probability"],
+"11|Maths":["Sets","Relations and Functions","Trigonometric Functions","Complex Numbers and Quadratic Equations","Linear Inequalities","Permutations and Combinations","Binomial Theorem","Sequences and Series","Straight Lines","Conic Sections","Introduction to Three Dimensional Geometry","Limits and Derivatives","Statistics","Probability"],
+"12|Maths":["Relations and Functions","Inverse Trigonometric Functions","Matrices","Determinants","Continuity and Differentiability","Applications of Derivatives","Integrals","Applications of Integrals","Differential Equations","Vector Algebra","Three Dimensional Geometry","Linear Programming","Probability"],
+"10|Science":["Chemical Reactions and Equations","Acids, Bases and Salts","Metals and Non-metals","Life Processes","Light: Reflection and Refraction","Electricity"],
+"11|Physics":["Units and Measurements","Motion in a Straight Line","Motion in a Plane","Laws of Motion","Work, Energy and Power","System of Particles and Rotational Motion","Gravitation","Mechanical Properties of Solids","Mechanical Properties of Fluids","Thermal Properties of Matter","Thermodynamics","Kinetic Theory","Oscillations","Waves"],
+"12|Physics":["Electric Charges and Fields","Electrostatic Potential and Capacitance","Current Electricity","Moving Charges and Magnetism","Magnetism and Matter","Electromagnetic Induction","Alternating Current","Electromagnetic Waves","Ray Optics and Optical Instruments","Wave Optics","Dual Nature of Radiation and Matter","Atoms","Nuclei","Semiconductor Electronics: Materials, Devices and Simple Circuits"],
+"11|Chemistry":["Some Basic Concepts of Chemistry","Structure of Atom","Classification of Elements and Periodicity in Properties","Chemical Bonding and Molecular Structure","Thermodynamics","Equilibrium","Redox Reactions","Organic Chemistry: Some Basic Principles and Techniques","Hydrocarbons"],
+"12|Chemistry":["Solutions","Electrochemistry","Chemical Kinetics","The d- and f-Block Elements","Coordination Compounds","Haloalkanes and Haloarenes","Alcohols, Phenols and Ethers","Aldehydes, Ketones and Carboxylic Acids","Amines","Biomolecules"],
+"11|Biology":["The Living World","Biological Classification","Plant Kingdom","Animal Kingdom","Morphology of Flowering Plants","Anatomy of Flowering Plants","Structural Organisation in Animals","Cell: The Unit of Life","Biomolecules","Cell Cycle and Cell Division","Photosynthesis in Higher Plants","Respiration in Plants","Plant Growth and Development","Breathing and Exchange of Gases","Body Fluids and Circulation","Excretory Products and their Elimination","Locomotion and Movement","Neural Control and Coordination","Chemical Coordination and Integration"],
+"12|Biology":["Sexual Reproduction in Flowering Plants","Human Reproduction","Reproductive Health","Principles of Inheritance and Variation","Molecular Basis of Inheritance","Evolution","Human Health and Disease","Microbes in Human Welfare","Biotechnology: Principles and Processes","Biotechnology and its Applications","Organisms and Populations","Ecosystem","Biodiversity and Conservation"]};
+const $=s=>document.querySelector(s);
+const st={cls:10,subj:"Maths",chap:null,tab:"study"};
+let prog={};try{prog=JSON.parse(localStorage.getItem("pp:prog")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("pp:prog",JSON.stringify(prog))}catch(e){}};
+const key=()=>`${st.cls}|${st.subj}|${st.chap}`;
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+// After you deploy worker.js, put its address here, e.g. "https://lamire-ai.yourname.workers.dev"
+const PROXY_URL="gentle-field-0b5c.luckywarrior1128.workers.dev";
+let sample=null,platform=null;
+const KEY=()=>{try{return localStorage.getItem("pp:key")||""}catch(e){return ""}};
+function mkShim(key){
+ const f=async(msgs,opt)=>{
+  let r;try{r=await fetch(PROXY_URL||"https://api.anthropic.com/v1/messages",{method:"POST",headers:PROXY_URL?{"content-type":"application/json"}:{"content-type":"application/json","x-api-key":key,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},body:JSON.stringify({model:"claude-haiku-4-5-20251001",max_tokens:2500,messages:msgs})})}catch(e){throw Object.assign(new Error("network"),{code:"network"})}
+  if(!r.ok)throw Object.assign(new Error("http "+r.status),{code:r.status===429?"rate_limited":r.status===401?"bad_key":"error"});
+  const d=await r.json(),t=(d.content||[]).map(x=>x.text||"").join("");
+  if(opt&&opt.onText)opt.onText({text:t});return t};
+ f.json=async p=>{const t=await f([{role:"user",content:p}]);return JSON.parse(t.replace(/```json|```/g,"").trim())};
+ return f}
+function pick(){sample=platform||(PROXY_URL?mkShim(""):KEY()?mkShim(KEY()):null)}
+function noAI(){return `<div class="card"><b>AI features need an Anthropic API key here.</b><p class="note">Paste your key to turn on the doubt solver, quizzes and lessons. It is saved only in this browser. Never put your key into a site that other people use, because anyone could copy it. You pay Anthropic for each use.</p><p><input id="ak" type="password" placeholder="sk-ant-..." autocomplete="off" style="width:100%;padding:8px;border:1.5px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)"></p><button class="btn" id="aks">Save key</button></div>`}
+try{if(typeof claude!=="undefined"&&claude.use){claude.use("sample").then(s=>{platform=s;pick();render()}).catch(()=>{})}}catch(e){}
+pick();
+
+$("#cls").innerHTML=Object.keys(SUBJ).map(c=>`<option value="${c}">Class ${c}</option>`).join("");
+function fillSubj(){$("#subj").innerHTML=SUBJ[st.cls].map(s=>`<option>${s}</option>`).join("");if(!SUBJ[st.cls].includes(st.subj))st.subj=SUBJ[st.cls][0];$("#subj").value=st.subj}
+$("#cls").value=st.cls;fillSubj();
+$("#cls").onchange=e=>{st.cls=+e.target.value;st.chap=null;fillSubj();render()};
+$("#subj").onchange=e=>{st.subj=e.target.value;st.chap=null;render()};
+$("#tabs").onclick=e=>{const b=e.target.closest("button");if(!b)return;st.tab=b.dataset.t;render()};
+
+function ctxLabel(){return `Class ${st.cls} ${st.subj}${st.chap?", chapter: "+st.chap:""}`}
+
+function study(){
+ const list=CH[`${st.cls}|${st.subj}`];
+ if(!list)return `<div class="card"><b>Chapters for Class ${st.cls} ${esc(st.subj)} are not loaded yet.</b><p class="note">This demo includes a few sample books. You can still use Ask a doubt and Practice with just the class and subject.</p></div>`;
+ return `<p class="note">Pick a chapter. It carries over to Ask a doubt and Practice.</p>`+list.map(c=>{const p=prog[`${st.cls}|${st.subj}|${c}`];return `<button class="chap" data-c="${esc(c)}" aria-pressed="${st.chap===c}"><span>${esc(c)}</span><span class="tag ${p!=null?"done":""}">${p!=null?"Best "+p+"/5":"Not tried"}</span></button>`}).join("");
+}
+function askUI(){
+ if(!sample)return noAI();
+ return `<p class="note">Context: ${esc(ctxLabel())}</p><textarea id="q" placeholder="Type your doubt, e.g. Why does the discriminant decide the nature of roots?"></textarea><p><button class="btn" id="go">Explain step by step</button></p><div class="ans" id="out" aria-live="polite"></div>`;
+}
+function quizUI(){
+ if(!sample)return noAI();
+ return `<p class="note">Five fresh questions on: ${esc(ctxLabel())}</p><p><button class="btn alt" id="mk">Start a quiz</button></p><div id="qz"></div>`;
+}
+function plan(){return `
+<div class="card"><b>What this MVP does</b><ul class="road"><li>Study: class, subject and chapter browser.</li><li>Ask: step-by-step doubt solver in NCERT style.</li><li>Practice: 5-question quizzes with best score saved on this device.</li></ul></div>
+<h2>Next 4 weeks</h2>
+<ul class="road"><li>Week 1: load the full chapter list for all classes and subjects from the current NCERT books.</li><li>Week 2: add accounts so progress follows the student across devices.</li><li>Week 3: add Hindi and regional-language explanations.</li><li>Week 4: pilot with 20 students, then track weekly return rate and quiz completion.</li></ul>
+<h2>Risks to settle early</h2>
+<ul class="road"><li>Content rights: NCERT text is copyrighted. Check NCERT's reuse terms before copying solutions, and write original explanations.</li><li>Accuracy: AI answers can be wrong. Add a "report this answer" button and review a sample every week.</li><li>Syllabus changes: NCERT has been issuing revised books, so keep chapter data editable.</li></ul>`}
+
+async function runAsk(){
+ const q=$("#q").value.trim();if(!q)return;
+ const out=$("#out"),b=$("#go");b.disabled=true;out.textContent="Thinking...";
+ try{await sample([{role:"user",content:`You are a patient tutor for CBSE students. Context: ${ctxLabel()}. Explain in simple language, step by step, in the style of NCERT textbooks. Show working for any calculation. Do not quote textbook text word for word. End with one short check-yourself question.\n\nStudent's doubt: ${q}`}],{cache:false,onText:({text})=>{out.textContent=text}})}
+ catch(e){out.innerHTML=`<span class="err">${e.code==="rate_limited"?"Too many requests. Wait a minute and try again.":e.code==="bad_key"?"Your API key was rejected. Check it and save again.":e.code==="not_granted"?"Permission was declined, so the helper can't answer.":"Something went wrong. Try again."}</span>`}
+ b.disabled=false;
+}
+async function runQuiz(){
+ const box=$("#qz"),b=$("#mk");b.disabled=true;box.innerHTML='<p class="note">Writing questions...</p>';
+ try{
+  const qs=await sample.json(`Write 5 multiple-choice questions for CBSE ${ctxLabel()}, at NCERT level, original wording. Return only JSON: an array of 5 objects {"q":string,"options":[4 strings],"answer":index 0-3,"why":one-sentence explanation}.`,{cache:false});
+  let score=0,done=0;
+  box.innerHTML=qs.map((x,i)=>`<div class="card" data-i="${i}"><b>${i+1}. ${esc(x.q)}</b>${x.options.map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("")}<div class="why" hidden>${esc(x.why)}</div></div>`).join("")+'<p id="res" class="note"></p>';
+  box.onclick=e=>{const o=e.target.closest(".opt"),c=e.target.closest(".card");if(!o||c.dataset.d)return;c.dataset.d=1;
+   const x=qs[c.dataset.i],j=+o.dataset.j;c.querySelectorAll(".opt").forEach((el,k)=>{if(k===x.answer)el.classList.add("ok");else if(k===j)el.classList.add("no")});
+   c.querySelector(".why").hidden=false;if(j===x.answer)score++;done++;
+   if(done===qs.length){$("#res").innerHTML=`<b>You scored ${score}/5.</b>`;if(st.chap){const k=key();if(prog[k]==null||score>prog[k]){prog[k]=score;save()}}}};
+ }catch(e){box.innerHTML=`<span class="err">Could not make a quiz. Try again.</span>`}
+ b.disabled=false;
+}
+
+
+/* Video lesson: AI-written, narrated, animated scenes with a tutor, captions and check questions */
+const LS={d:null,i:0,on:false,voice:true,cc:true,rate:1,t:null,tk:0};
+const PAL=[["#0b3d5c","#1f8a9e"],["#3b1d63","#c2547c"],["#173b2f","#4da36b"],["#5b2a0e","#e0933a"],["#1a2a5e","#5b7be0"]];
+const WORDS=s=>s.narration.split(/\s+/).filter(Boolean);
+const dur=k=>WORDS(LS.d.scenes[k]).length/(2.5*LS.rate)+4;
+const fmt=x=>Math.floor(x/60)+":"+String(Math.round(x%60)).padStart(2,"0");
+function stopLesson(){clearTimeout(LS.t);LS.tk++;try{speechSynthesis.cancel()}catch(e){};const p=$("#pres");if(p)p.classList.remove("talk")}
+function lessonUI(){
+ if(!sample)return noAI();
+ return `<p class="note">Lesson on: ${esc(ctxLabel())}. A narrated, animated lesson written by AI: a tutor talks, captions follow along, and a question comes after each scene. It is not a recorded video.</p><p><button class="btn alt" id="mkl">Create lesson</button></p><div id="lp"></div>`;
+}
+async function mkLesson(){
+ const b=$("#mkl"),p=$("#lp");b.disabled=true;p.innerHTML='<p class="note">Writing your lesson...</p>';stopLesson();LS.on=false;
+ try{LS.d=await sample.json(`Write a 5-scene video lesson for a CBSE student on ${ctxLabel()}, NCERT level, original wording, engaging like a good teacher. Return only JSON: {"title":string,"scenes":[{"emoji":one emoji that fits the scene,"heading":string,"narration":three short spoken sentences,"points":[3 short phrases],"flow":[3 or 4 very short labels showing a process or cause and effect],"fact":one short key takeaway,"check":{"q":string,"options":[3 strings],"answer":index 0-2}}]}`,{cache:false});LS.i=0;drawLesson()}
+ catch(e){p.innerHTML='<span class="err">Could not make the lesson. Try again.</span>'}
+ b.disabled=false;
+}
+function drawLesson(){
+ const n=LS.d.scenes.length;
+ $("#lp").innerHTML=`<h2>${esc(LS.d.title)}</h2><div class="vid" id="vid"><div id="scr" class="scn" aria-live="polite"></div></div><div class="segs" id="segs">${LS.d.scenes.map((_,k)=>`<button class="seg" data-i="${k}" aria-label="Go to scene ${k+1}"><i></i></button>`).join("")}</div>
+ <div class="row"><button class="btn" id="lpv">Back</button><button class="btn alt" id="lpl">Play</button><button class="btn" id="lnx">Next</button><span class="note" id="tm2"></span>
+ <select id="spd" aria-label="Speed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option><option value="1.5">1.5x</option></select>
+ <label class="note"><input type="checkbox" id="lcc" ${LS.cc?"checked":""}> Captions</label><label class="note"><input type="checkbox" id="lvc" ${LS.voice?"checked":""}> Voice</label><button class="btn" id="lfs">Full screen</button></div>`;
+ const go=k=>{if(k>=0&&k<n){stopLesson();LS.i=k;scene()}};
+ $("#lpv").onclick=()=>go(LS.i-1);$("#lnx").onclick=()=>go(LS.i+1);
+ $("#segs").onclick=e=>{const b=e.target.closest(".seg");if(b)go(+b.dataset.i)};
+ $("#lpl").onclick=()=>{LS.on=!LS.on;stopLesson();$("#lpl").textContent=LS.on?"Pause":"Play";if(LS.on)scene()};
+ $("#lvc").onchange=e=>{LS.voice=e.target.checked};
+ $("#lcc").onchange=e=>{LS.cc=e.target.checked;$("#vid").classList.toggle("nocc",!LS.cc)};
+ $("#spd").onchange=e=>{LS.rate=+e.target.value;if(LS.on){stopLesson();scene()}else vprog(0)};
+ $("#lfs").onclick=()=>{try{const v=$("#vid");(v.requestFullscreen||v.webkitRequestFullscreen).call(v)}catch(e){}};
+ scene();
+}
+function vprog(f){
+ const n=LS.d.scenes.length;let before=0,total=0;
+ for(let k=0;k<n;k++){const d=dur(k);if(k<LS.i)before+=d;total+=d}
+ document.querySelectorAll(".seg i").forEach((el,k)=>{el.style.width=(k<LS.i?100:k===LS.i?f*100:0)+"%"});
+ $("#tm2").textContent=fmt(before+f*dur(LS.i))+" / "+fmt(total);
+}
+function scene(){
+ const s=LS.d.scenes[LS.i],p=PAL[LS.i%PAL.length],w=WORDS(s),tk=++LS.tk,vid=$("#vid"),scr=$("#scr");
+ vid.classList.toggle("nocc",!LS.cc);
+ scr.className="";void scr.offsetWidth;scr.className="scn";
+ scr.innerHTML=`<div class="bgfx" style="background:linear-gradient(135deg,${p[0]},${p[1]})"><b></b><b></b></div><div class="art"><div class="em">${esc(s.emoji)}</div></div>
+ <div class="pres" id="pres"><div class="face"><i></i><i></i><u></u></div><span>Tutor</span></div>
+ <div class="lower"><h3>${esc(s.heading)}</h3><ul>${(s.points||[]).map((x,k)=>`<li style="animation-delay:${.6+k*1.1}s">${esc(x)}</li>`).join("")}</ul></div>
+ <div class="info">${s.flow&&s.flow.length?`<div class="flow">${s.flow.map((x,k)=>`<span style="animation-delay:${1.2+k*.9}s">${esc(x)}</span>`).join("<em>→</em>")}</div>`:""}${s.fact?`<div class="rem">Remember: ${esc(s.fact)}</div>`:""}</div>
+ <div class="sub" id="sub">${w.map(x=>`<span>${esc(x)}</span>`).join(" ")}</div><div class="chk" id="chk"></div>`;
+ vprog(0);
+ if(!LS.on)return;
+ let idx=-1,speaking=false;
+ const mark=k=>{idx=Math.max(-1,Math.min(k,w.length-1));[...$("#sub").children].forEach((el,j)=>el.classList.toggle("on",j<=idx));vprog((idx+1)/w.length)};
+ const done=()=>{if(tk!==LS.tk)return;$("#pres").classList.remove("talk");LS.t=setTimeout(()=>{if(tk===LS.tk)askCheck(s)},600)};
+ const tick=()=>{if(tk!==LS.tk)return;if(idx<w.length-1){mark(idx+1);LS.t=setTimeout(tick,Math.round(400/LS.rate))}else if(!speaking)done()};
+ $("#pres").classList.add("talk");
+ if(LS.voice&&window.speechSynthesis){
+  const u=new SpeechSynthesisUtterance(s.narration);u.rate=LS.rate;speaking=true;
+  u.onboundary=e=>{if(tk===LS.tk&&e.name==="word")mark(s.narration.slice(0,e.charIndex).split(/\s+/).filter(Boolean).length)};
+  u.onend=u.onerror=()=>{speaking=false;if(tk===LS.tk){mark(w.length-1);done()}};
+  speechSynthesis.speak(u);
+ }
+ tick();
+}
+function askCheck(s){
+ const c=s.check,box=$("#chk");
+ if(!c)return advance();
+ box.innerHTML=`<p><b>Quick check: ${esc(c.q)}</b></p>`+c.options.map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("");
+ box.onclick=e=>{const o=e.target.closest(".opt");if(!o||box.dataset.d)return;box.dataset.d=1;
+  box.querySelectorAll(".opt").forEach((el,k)=>{if(k===c.answer)el.classList.add("ok");else if(k===+o.dataset.j)el.classList.add("no")});
+  if(LS.on)LS.t=setTimeout(advance,2200)};
+}
+function advance(){
+ if(LS.i<LS.d.scenes.length-1){LS.i++;scene()}
+ else{LS.on=false;$("#lpl").textContent="Replay";$("#chk").innerHTML="<p><b>Lesson complete. Try the Practice tab next.</b></p>";LS.i=0}
+}
+/* Focus sounds: generated in the browser, no downloads */
+let AC=null,SRC=null,GN=null,sndT=null;const SND={type:null,vol:.5,min:0};
+function mkBuf(type){const n=AC.sampleRate*4,b=AC.createBuffer(1,n,AC.sampleRate),d=b.getChannelData(0);let l=0,b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+ for(let i=0;i<n;i++){const w=Math.random()*2-1;
+  if(type==="pink"){b0=.99886*b0+w*.0555179;b1=.99332*b1+w*.0750759;b2=.969*b2+w*.153852;b3=.8665*b3+w*.3104856;b4=.55*b4+w*.5329522;b5=-.7616*b5-w*.016898;d[i]=(b0+b1+b2+b3+b4+b5+b6+w*.5362)*.11;b6=w*.115926}
+  else if(type==="white")d[i]=w*.5;else{l=(l+.02*w)/1.02;d[i]=l*3.5}}
+ return b}
+function stopSnd(){if(SRC)SRC.forEach(x=>{try{x.stop()}catch(e){}});SRC=null;SND.type=null;clearTimeout(sndT)}
+function playSnd(type){
+ stopSnd();AC=AC||new(window.AudioContext||window.webkitAudioContext)();AC.resume();
+ const s=AC.createBufferSource();s.buffer=mkBuf(type==="ocean"?"brown":type);s.loop=true;GN=AC.createGain();GN.gain.value=SND.vol;
+ if(type==="ocean"){const f=AC.createBiquadFilter();f.type="lowpass";f.frequency.value=700;const sw=AC.createGain();sw.gain.value=.5;const lfo=AC.createOscillator();lfo.frequency.value=.12;const dp=AC.createGain();dp.gain.value=.45;lfo.connect(dp);dp.connect(sw.gain);s.connect(f);f.connect(sw);sw.connect(GN);lfo.start();SRC=[s,lfo]}
+ else{s.connect(GN);SRC=[s]}
+ GN.connect(AC.destination);s.start();SND.type=type;
+ if(SND.min)sndT=setTimeout(()=>{stopSnd();if(st.tab==="sound")render()},SND.min*60000);
+}
+function soundUI(){
+ const T=[["white","White noise"],["pink","Pink noise"],["brown","Brown noise"],["ocean","Ocean waves"]];
+ return `<p class="note">Steady background sound to help you focus. Sounds are made in your browser.</p><div class="row">${T.map(t=>`<button class="snd" data-s="${t[0]}" aria-pressed="${SND.type===t[0]}">${t[1]}</button>`).join("")}</div>
+ <div class="row"><label>Volume <input type="range" id="vol" min="0" max="1" step="0.05" value="${SND.vol}"></label>
+ <label>Sleep timer <select id="tm">${[0,15,30,60].map(m=>`<option value="${m}" ${SND.min===m?"selected":""}>${m?m+" min":"Off"}</option>`).join("")}</select></label>
+ <button class="btn" id="off">Stop</button></div>`;
+}
+function bindSound(el){
+ el.querySelectorAll(".snd").forEach(b=>b.onclick=()=>{playSnd(b.dataset.s);render()});
+ $("#vol").oninput=e=>{SND.vol=+e.target.value;if(GN)GN.gain.value=SND.vol};
+ $("#tm").onchange=e=>{SND.min=+e.target.value;if(SND.type)playSnd(SND.type)};
+ $("#off").onclick=()=>{stopSnd();render()};
+}
+
+const SHARE_URL="https://claude.ai/artifact/VAjzKk2NeUzc3pJcGRcQjL",SHARE_TXT="LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12 with doubts, quizzes and video lessons.";
+$("#wa").href="https://wa.me/?text="+encodeURIComponent(SHARE_TXT+" "+SHARE_URL);
+$("#shr").onclick=async()=>{const m=$("#shm");
+ try{if(navigator.share){await navigator.share({title:"LAst.MInute.REvision.AI",text:SHARE_TXT,url:SHARE_URL});return}}catch(e){if(e&&e.name==="AbortError")return}
+ try{await navigator.clipboard.writeText(SHARE_URL);m.textContent="Link copied"}catch(e){m.textContent=SHARE_URL}};
+function render(){
+ document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.t===st.tab));
+ ["study","lesson","ask","quiz","sound","plan"].forEach(t=>$("#"+t).hidden=t!==st.tab);
+ const el=$("#"+st.tab);
+ if(st.tab==="study"){el.innerHTML=study();el.querySelectorAll(".chap").forEach(b=>b.onclick=()=>{st.chap=b.dataset.c;render()})}
+ if(st.tab==="ask"){el.innerHTML=askUI();const g=$("#go");if(g)g.onclick=runAsk}
+ if(st.tab==="quiz"){el.innerHTML=quizUI();const m=$("#mk");if(m)m.onclick=runQuiz}
+ if(st.tab==="lesson"){el.innerHTML=lessonUI();const m=$("#mkl");if(m)m.onclick=mkLesson;LS.d=null;stopLesson();LS.on=false}
+ if(st.tab==="sound"){el.innerHTML=soundUI();bindSound(el)}
+ if(st.tab!=="lesson"){stopLesson();LS.on=false}
+ if(st.tab==="plan")el.innerHTML=plan();
+ const kb=$("#aks");if(kb)kb.onclick=()=>{const v=$("#ak").value.trim();if(!v)return;try{localStorage.setItem("pp:key",v)}catch(e){}pick();render()};
+}
+render();
+</script>
+</body>
+</html>
