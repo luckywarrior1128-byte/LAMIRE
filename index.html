@@ -9,6 +9,7 @@
 <meta property="og:title" content="LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12">
 <meta property="og:description" content="Chapter lists, AI doubt solver, quizzes, video lessons and focus sounds for CBSE students.">
 <meta name="theme-color" content="#0d5f80">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#eef2f7;--card:#fff;--ink:#14213d;--mute:#5b6778;--line:#d3dbe6;--hi:#ffd23f;--acc:#0f766e;--bad:#b42318;--good:#067647;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -174,7 +175,7 @@ const save=()=>{try{localStorage.setItem("pp:prog",JSON.stringify(prog))}catch(e
 const key=()=>`${st.cls}|${st.subj}|${st.chap}`;
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 // After you deploy worker.js, put its address here, e.g. "https://lamire-ai.yourname.workers.dev"
-const PROXY_URL="gentle-field-0b5c.luckywarrior1128.workers.dev";
+const PROXY_URL=(u=>{u=u.trim();return u&&!/^https?:\/\//.test(u)?"https://"+u:u})("https://gentle-field-0b5c.luckywarrior1128.workers.dev");
 let sample=null,platform=null;
 const KEY=()=>{try{return localStorage.getItem("pp:key")||""}catch(e){return ""}};
 function mkShim(key){
@@ -183,7 +184,7 @@ function mkShim(key){
   if(!r.ok)throw Object.assign(new Error("http "+r.status),{code:r.status===429?"rate_limited":r.status===401?"bad_key":"error"});
   const d=await r.json(),t=(d.content||[]).map(x=>x.text||"").join("");
   if(opt&&opt.onText)opt.onText({text:t});return t};
- f.json=async p=>{const t=await f([{role:"user",content:p}]);return JSON.parse(t.replace(/```json|```/g,"").trim())};
+ f.json=async p=>{const t=(await f([{role:"user",content:p}])).replace(/```json|```/g,"");const a=t.search(/[\[{]/),z=Math.max(t.lastIndexOf("}"),t.lastIndexOf("]"));return JSON.parse(t.slice(a,z+1))};
  return f}
 function pick(){sample=platform||(PROXY_URL?mkShim(""):KEY()?mkShim(KEY()):null)}
 function noAI(){return `<div class="card"><b>AI features need an Anthropic API key here.</b><p class="note">Paste your key to turn on the doubt solver, quizzes and lessons. It is saved only in this browser. Never put your key into a site that other people use, because anyone could copy it. You pay Anthropic for each use.</p><p><input id="ak" type="password" placeholder="sk-ant-..." autocomplete="off" style="width:100%;padding:8px;border:1.5px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)"></p><button class="btn" id="aks">Save key</button></div>`}
@@ -223,7 +224,7 @@ async function runAsk(){
  const q=$("#q").value.trim();if(!q)return;
  const out=$("#out"),b=$("#go");b.disabled=true;out.textContent="Thinking...";
  try{await sample([{role:"user",content:`You are a patient tutor for CBSE students. Context: ${ctxLabel()}. Explain in simple language, step by step, in the style of NCERT textbooks. Show working for any calculation. Do not quote textbook text word for word. End with one short check-yourself question.\n\nStudent's doubt: ${q}`}],{cache:false,onText:({text})=>{out.textContent=text}})}
- catch(e){out.innerHTML=`<span class="err">${e.code==="rate_limited"?"Too many requests. Wait a minute and try again.":e.code==="bad_key"?"Your API key was rejected. Check it and save again.":e.code==="not_granted"?"Permission was declined, so the helper can't answer.":"Something went wrong. Try again."}</span>`}
+ catch(e){out.innerHTML=`<span class="err">${e.code==="rate_limited"?"Too many requests. Wait a minute and try again.":e.code==="bad_key"?"Your API key was rejected. Check it and save again.":e.code==="not_granted"?"Permission was declined, so the helper can't answer.":e.code==="network"?"Could not reach the AI server. Check your internet and the Worker address.":"Something went wrong"+(e.code==="error"&&e.message?" ("+e.message+")":"")+". Try again."}</span>`}
  b.disabled=false;
 }
 async function runQuiz(){
@@ -246,7 +247,7 @@ const LS={d:null,i:0,on:false,voice:true,cc:true,rate:1,t:null,tk:0};
 const PAL=[["#0b3d5c","#1f8a9e"],["#3b1d63","#c2547c"],["#173b2f","#4da36b"],["#5b2a0e","#e0933a"],["#1a2a5e","#5b7be0"]];
 const WORDS=s=>s.narration.split(/\s+/).filter(Boolean);
 const dur=k=>WORDS(LS.d.scenes[k]).length/(2.5*LS.rate)+4;
-const fmt=x=>Math.floor(x/60)+":"+String(Math.round(x%60)).padStart(2,"0");
+const fmt=x=>{const t=Math.round(x);return Math.floor(t/60)+":"+String(t%60).padStart(2,"0")};
 function stopLesson(){clearTimeout(LS.t);LS.tk++;try{speechSynthesis.cancel()}catch(e){};const p=$("#pres");if(p)p.classList.remove("talk")}
 function lessonUI(){
  if(!sample)return noAI();
@@ -346,7 +347,7 @@ function bindSound(el){
  $("#off").onclick=()=>{stopSnd();render()};
 }
 
-const SHARE_URL="https://claude.ai/artifact/VAjzKk2NeUzc3pJcGRcQjL",SHARE_TXT="LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12 with doubts, quizzes and video lessons.";
+const SHARE_URL=/^https?:/.test(location.href)&&!/claude/i.test(location.hostname)?location.href.split("#")[0]:"https://claude.ai/artifact/VAjzKk2NeUzc3pJcGRcQjL",SHARE_TXT="LAst.MInute.REvision.AI: free NCERT study help for Class 10 to 12 with doubts, quizzes and video lessons.";
 $("#wa").href="https://wa.me/?text="+encodeURIComponent(SHARE_TXT+" "+SHARE_URL);
 $("#shr").onclick=async()=>{const m=$("#shm");
  try{if(navigator.share){await navigator.share({title:"LAst.MInute.REvision.AI",text:SHARE_TXT,url:SHARE_URL});return}}catch(e){if(e&&e.name==="AbortError")return}
